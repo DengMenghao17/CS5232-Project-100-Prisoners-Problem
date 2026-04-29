@@ -1,25 +1,6 @@
 import Mathlib.Data.Fintype.Perm
 import Mathlib.Tactic
 
-/-!
-A single-file Lean model of the 100 prisoners problem.
-
-This file implements the bare formalisation minimum from the project proposal:
-
-1. State Specification:
-   the game environment, room state, and pointer-following strategy.
-
-2. Cycle Equivalence Lemma:
-   the number of drawers opened before prisoner `i` finds their own label
-   is exactly the length of the cycle containing `i`.
-
-3. Main Structural Theorem:
-   the pointer-following strategy succeeds for all prisoners iff every
-   formal disjoint cycle has length at most 50.
-
-The file does not use Veil, Velvet, LoVe, or course case-study libraries.
--/
-
 namespace Prisoners
 
 /-- Number of prisoners and drawers. -/
